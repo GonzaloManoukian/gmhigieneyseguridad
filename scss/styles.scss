@@ -1,0 +1,317 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.8rem;
+	color: #0B2027;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+ #body__bs--correcciones {
+
+ 	padding-left: 0px;
+ 	padding-right: 0px;
+ }
+
+.body__contenedor {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding: 0px;
+}
+
+
+// HEADER
+
+.header {
+	position: fixed;
+	width: 100%;
+	background: none;
+	padding: 1rem;
+	flex-basis: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999;
+	transition: all 0.5s;
+	left: 0px;
+
+	nav {
+		text-align: center;
+		word-spacing: 2rem;
+		width: 50%;
+		display: flex;
+
+		ul {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+
+			li {
+				word-spacing: normal;
+				text-align: center;
+				flex-grow: 1;
+
+				a {
+					color: inherit;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+
+.header--scroll {
+	background-color: #D8E5F5;
+}
+
+.header__menu--hover {
+
+	a {	
+
+		transition: all 0.5s;
+		border: 2px solid none;
+  		border-radius: 5px;
+
+
+		&:hover {
+		background-color: #97B9D2;
+
+		}
+	}
+}
+
+
+header {
+
+	nav {
+
+		#header__submenu--hover {
+			background-color: #D8E5F5;
+			font-size: 1.6rem;
+		}
+	}
+}
+
+#header__navbar {
+	justify-content: flex-end;
+}
+
+.head_logo {
+	width: 180px;
+	margin-left: 30px;
+	--animate-duration: 3s;
+}
+
+
+// BANNER
+
+.banner__background_image {
+	position: relative;
+	left: 0;
+	background-image: url(../img/index.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	flex-basis: 100%;
+	--animate-duration: 2s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.banner__logo {
+	flex-basis: 100%;
+	text-align: center;
+}
+
+.banner__logo--img {
+	width: 25%;
+	--animate-duration: 3s;
+}
+
+
+
+//PRESENTACION
+
+#quienes_somos {
+
+	max-width: 1440px;
+	// flex-basis: 100%;
+
+}
+
+.section--text {
+	text-align: center;
+	padding-top: 5%;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 6%;
+	// flex-basis: 100%;
+}
+
+
+.bs--font_size {
+	font-size: 1.6rem;
+}
+
+.h__titulos {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5%;
+	padding: 0;
+	border-bottom: 2px solid #97B9D2;
+}
+
+.h__titulos--size {
+	font-size: 2.5rem;
+	padding-bottom: 2rem;
+}
+
+.h__titulos--div {
+	margin-top: 3rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 3.5rem;
+	// flex-basis: 100%;
+	margin-bottom: 3rem;
+}
+
+/*SERVICIOS*/
+
+#servicios {
+
+	max-width: 1440px;
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+    justify-content: center;
+
+}
+
+.servicios__cards_group {
+	justify-content: space-around;
+	align-items: space-around;
+	padding-bottom: 5%;
+}
+
+.servicios__cards {
+	border-color: #97B9D2;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.servicios__cards--h {
+	height: 7rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background-color: #D8E5F5;
+	border-color: #97B9D2;
+}
+
+.servicios__cards--p {
+	height: 45rem;
+	list-style-type: none;
+	padding: 0% 5% 0% 5%;
+	line-height: 150%;
+	background-color: inherit;
+}
+
+.list-group-item {
+	background-color: inherit;
+}
+
+.servicios__cards--button {
+	background-color: #1F6BC1;
+	border-color: #1A579E;
+}
+
+.servicios__cards--hover {
+
+	&:hover {
+		box-shadow: 1px 1px 10px #89ABB7;
+	}
+}
+
+
+/* EDUCATIVOS Y SALUD */
+
+
+#educativos_salud {
+
+	position: relative;
+
+}
+
+.salud__background_img {
+	position: initial;
+	left: 0;
+	background-image: url(../img/salud.jpg);
+	background-repeat: no-repeat;
+	// background-position: center center;
+	background-size: 100%;
+	flex-basis: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	// height: 100vh;
+}
+
+/* CONTACTO */
+
+.contacto__background_img {
+	position: initial;
+	left: 0;
+	padding-right: 0px;
+	padding-left: 0px;
+	background-image: url(../img/contacto.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	flex-basis: 100%;
+//	display: flex;
+//	flex-flow: row wrap;
+//	justify-content: center;
+//	align-content: center;
+//	align-items: center;
+	height: 50vh;
+}
+
+
+// FOOTER
+
+.footer {
+	background-color: #89ABB7;
+	flex-basis: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+}
+
+.footer__copyright {
+
+	p {
+		text-align: center;
+		font-weight: 100;
+	}
+}
+
+@import "mediaqueries.scss";
