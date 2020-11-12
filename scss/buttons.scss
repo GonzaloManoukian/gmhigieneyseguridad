@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+//SCROLL
+
+.banner__scroll_button {
+
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+
+    a {
+        position: absolute;
+        bottom: 20px;
+        z-index: 2;
+        display: inline-block;
+        color: #0B2027;
+        letter-spacing: .1em;
+        text-decoration: none;
+        transition: opacity .3s;
+        opacity: .5;
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+
+        span {
+            position: absolute;
+            top: 0;
+            width: 46px;
+            height: 46px;
+            border: 1px solid #0B2027;
+            border-radius: 100%;
+            box-sizing: border-box;
+
+            &::after {
+                position: absolute;
+                top: 10px;
+                left: 14px;
+                content: '';
+                width: 16px;
+                height: 16px;
+                border-left: 1px solid #0B2027;
+                border-bottom: 1px solid #0B2027;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+
+.banner__scroll_button a:hover {
+    opacity: .3;
+}
+
+
+// WHATSAPP
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    line-height: 55px;
+}
+
+.float:hover {
+    background-color: #20be6d;
+}
+
+.my-float {
+    margin-top: 16px;
+}

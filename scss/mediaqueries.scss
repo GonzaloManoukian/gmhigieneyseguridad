@@ -1,17 +1,69 @@
-
 @media screen and (max-width: 1279px) {
-    
-.banner__background_image {
 
-    background-size: auto 100vh;
-    background-position: center center;
+    .banner__background_image {
+
+        background-size: auto 100vh;
+        background-position: center center;
+        top: 0px;
+    }
+
+    .banner__logo--img {
+        width: 300px;
+    }
+
 }
 
-.banner__logo--img {
-    width: 300px;
-}
+@media screen and (max-width: 999px) {
+    .burger-button {
+        display: block;
+    }
+
+    .header {
+        display: initial;
+
+        nav {
+            width: 100%;
+
+            ul {
+                flex-flow: column;
+                height: 40%;
+                align-items: flex-end;
+                margin-right: 20px;
+
+                li {
+
+                    display: list-item;
+                    flex: 0;
+                }
+            }
+        }
+    }
+
+    .header--scroll {
+        background-color: transparent;
+    }
+
+    .head_logo {
+
+        display: none;
+    }
 
 
+    .menu {
+        position: fixed;
+        background: rgba(151, 185, 210, .9);
+        z-index: 998;
+        top: 0;
+        right: -100vw;
+        width: 100vw;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
 
-
+    .menu.is-active {
+        right: 0;
+    }
 }

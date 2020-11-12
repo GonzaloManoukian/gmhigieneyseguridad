@@ -23,44 +23,49 @@
 </head>
 
 <body>
-
+    
     <div id="body__bs--correcciones" class="container-fluid">
         <div class="body__contenedor">
 
             <header class="header">
                 <div>
-                    <p>
-                        <a href="index.html"><img src="img/nombre.png" alt="Gonzalo Manoukian" class="head_logo animate__animated animate__fadeIn"></a>
-                    </p>
+                    <a href="index.html"><img src="img/nombre.png" alt="Gonzalo Manoukian" class="head_logo animate__animated animate__fadeIn"></a>
                 </div>
-                <nav class="navbar navbar-expand-lg navbar-light" id="header__navbar">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active" id="header__menu--hover">
-                                <a class="nav-link" href="#quienes_somos"> ¿Quienes Somos? <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active" id="header__menu--hover">
-                                <a class="nav-link" href="#servicios"> Servicios <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active" id="header__menu--hover">
-                                <a class="nav-link" href="#educativos_salud"> Educación y Salud <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active" id="header__menu--hover">
-                                <a class="nav-link" href="#contacto">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
+
+                <i class="burger-button">
+                    <img src="icons/burger.png" alt="burger-menu icon" height="20px">
+                </i>
+
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html"> Inicio </a>
+                        </li>
+                        <li>
+                            <a href="#quienes_somos"> ¿Quienes Somos? </a>
+                        </li>
+                        <li>
+                            <a href="#servicios"> Servicios </a>
+                        </li>
+                        <li>
+                            <a href="#educativos_salud"> Educación y Salud </a>
+                        </li>
+                        <li>
+                            <a href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
                 </nav>
             </header>
 
-            <section class="banner__background_image animate__animated animate__fadeIn">
+            <div class="banner__background_image animate__animated animate__fadeIn">
                 <div class="banner__logo">
                     <img src="img/logo.png" alt="Gonzalo Manoukian" class="banner__logo--img animate__animated animate__fadeIn">
                 </div>
-            </section>
+            </div>
+            <div class="banner__scroll_button">
+                <a href="#quienes_somos"><span></span>¿Quienes Somos?</a>
+            </div>
+
             <section id="quienes_somos">
                 <div class="section--text">
                     <h1> Consultora en Higiene y Seguridad Laboral</h1>
@@ -96,7 +101,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-end"><a href="contacto.html" class="btn btn-primary bs--font_size servicios__cards--button">Solicite su cotización!</a>
+                                <div class="d-flex justify-content-end"><a href="#contacto" class="btn btn-primary bs--font_size servicios__cards--button">Solicite su cotización!</a>
                                 </div>
                             </div>
                         </div>
@@ -120,7 +125,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-end"><a href="contacto.html" class="btn btn-primary bs--font_size servicios__cards--button">Solicite su cotización!</a>
+                                <div class="d-flex justify-content-end"><a href="#contacto" class="btn btn-primary bs--font_size servicios__cards--button">Solicite su cotización!</a>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +147,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-end"><a href="contacto.html" class="btn btn-primary bs--font_size servicios__cards--button">Solicite su cotización!</a>
+                                <div class="d-flex justify-content-end"><a href="#contacto" class="btn btn-primary bs--font_size servicios__cards--button">Solicite su cotización!</a>
                                 </div>
                             </div>
                         </div>
@@ -179,7 +184,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="d-flex justify-content-end"><a href="contacto.html" class="btn btn-primary bs--font_size servicios__cards--button">Solicite su cotización!</a></div>
+                                    <div class="d-flex justify-content-end"><a href="#contacto" class="btn btn-primary bs--font_size servicios__cards--button">Solicite su cotización!</a></div>
                                 </div>
                             </div>
                         </div>
@@ -202,7 +207,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="d-flex justify-content-end"><a href="contacto.html" class="btn btn-primary bs--font_size servicios__cards--button">Solicite su cotización!</a></div>
+                                    <div class="d-flex justify-content-end"><a href="#contacto" class="btn btn-primary bs--font_size servicios__cards--button">Solicite su cotización!</a></div>
                                 </div>
                             </div>
                         </div>
@@ -223,7 +228,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="d-flex justify-content-end"><a href="contacto.html" class="btn btn-primary bs--font_size servicios__cards--button">Solicite su cotización!</a></div>
+                                    <div class="d-flex justify-content-end"><a href="#contacto" class="btn btn-primary bs--font_size servicios__cards--button">Solicite su cotización!</a></div>
                                 </div>
                             </div>
                         </div>
@@ -231,7 +236,9 @@
                 </div>
             </section>
 
-            <section class="section--text">
+            
+            <!-- QUOTE -->
+            <section id="quote" class="section--text">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Rerum veritatis aperiam possimus ex dolorum consequatur pariatur dicta ipsam, officia molestiae saepe unde accusantium mollitia sint laboriosam in, amet, id. Aperiam animi, saepe sed eaque quos, reiciendis sint natus perferendis distinctio impedit aspernatur sapiente dolore dolorum corporis nemo est eveniet ea repudiandae ipsum praesentium. Recusandae molestias culpa praesentium dignissimos dolorum velit aperiam cupiditate, doloremque! Voluptates eveniet, perspiciatis cupiditate quisquam fugiat minus totam enim quidem doloribus et sapiente repellat magni unde quo repudiandae quis iusto nisi aut officia sed. Corporis eaque ipsum iusto porro, atque consequuntur nihil rerum ad ipsa laudantium nesciunt.</p>
             </section>
 
@@ -240,7 +247,8 @@
                     <form method="post" action="">
                         <div class="row">
                             <div class="col-md-12 mb-4 text-center">
-                                <h2>Contacto</h2>
+                                <h3 class="h__titulos--div">Contacto</h3>
+                                <p class="contacto--p"> Envianos tu consulta para que podamos asesorarte!</p>
                             </div>
                         </div>
                         <div class="form-group">
@@ -276,8 +284,23 @@
             </section>
         </div>
     </div>
+    
+    <div> 
+        <a href="https://wa.me/5491134079792" class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float">
+                <img src="icons/whatsapp.png" alt="whatsapp icon" height="35px">
+            </i>
+        </a>
+    </div>
 
     <footer class="footer">
+       <h4 class="footer--h"> Redes Sociales </h4>
+        <div class="footer__social">
+           <i class="footer__social--icon"><img src="icons/email.png" alt="email icon"></i>
+           <i class="footer__social--icon"><img src="icons/facebook.png" alt="facebook icon"></i>
+           <i class="footer__social--icon"><img src="icons/instagram.png" alt="instagram icon"></i>
+           <i class="footer__social--icon"><img src="icons/linkedin.png" alt="linkedin icon"></i>            
+        </div>
         <div class="footer__copyright">
             <p>© Copyright 2020-2020 Gonzalo Manoukian - Todos los Derechos Reservados</p>
         </div>
@@ -297,6 +320,18 @@
             }
         })
 
+        //      Menu Hamburguesa Responsive
+
+        const menu = document.querySelector('.menu');
+        const burgerButton = document.querySelector('.burger-button');
+        burgerButton.addEventListener('click', () => {
+            menu.classList.toggle('is-active');
+        })
+
+        menu.addEventListener('click', function() {
+            menu.classList.remove('is-active');
+        });
+        
     </script>
     <!-- Scripts BS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
