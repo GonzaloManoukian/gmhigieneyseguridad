@@ -1,9 +1,6 @@
 @media screen and (max-width: 1279px) {
 
     .banner__background_image {
-
-        background-size: auto 100vh;
-        background-position: center center;
         top: 0px;
     }
 
@@ -11,9 +8,6 @@
         width: 300px;
     }
 
-}
-
-@media screen and (max-width: 999px) {
     .burger-button {
         display: block;
     }
@@ -34,6 +28,12 @@
 
                     display: list-item;
                     flex: 0;
+                    border-bottom: 1px solid #444e51;
+                    width: 200px;
+                    text-align: end;
+                    color: #444e51;
+                    border-radius: 0;
+                    font-weight: 400;
                 }
             }
         }
@@ -52,6 +52,7 @@
     .menu {
         position: fixed;
         background: rgba(151, 185, 210, .9);
+        background-image: linear-gradient(to right, rgba(151, 185, 210, .8), rgba(123, 159, 186, .8));
         z-index: 998;
         top: 0;
         right: -100vw;
@@ -65,5 +66,122 @@
 
     .menu.is-active {
         right: 0;
+    }
+}
+
+
+
+@media (max-width: 1023px) {
+
+
+    //    SERVICIOS
+
+    #servicios {
+        max-width: 650px;
+    }
+
+    .servicios__cards_group {
+        margin: 0;
+    }
+
+    .servicios__cards {
+        margin-bottom: 50px;
+    }
+
+    .servicios__cards--h {
+        height: auto;
+
+        h3 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .servicios__cards--p {
+        height: auto;
+        padding: 20px 50px;
+    }
+
+
+    //    EDUCATIVOS Y SALUD
+
+    .educativos__width {
+        max-width: 620px;
+        margin: 0;
+    }
+
+    .h__titulos {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+
+    html {
+
+        font-size: 55%;
+    }
+
+    #quienes_somos {
+
+        padding-top: 50px;
+    }
+
+    #servicios {
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .servicios__cards {
+        margin-bottom: 30px;
+    }
+
+    .servicios__cards--p {
+        padding: 15px 20px;
+    }
+
+    #educativos_salud {
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .h__titulos--div {
+        font-size: 2.8rem;
+
+    }
+
+    #quote {
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #contacto {
+
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .footer__social {
+
+        width: auto;
+    }
+
+    .button__whatsapp {
+        width: 50px;
+        height: 50px;
+        bottom: 10px;
+        left: 10px;
+        right: 0;
+        line-height: 47px;
+
+        img {
+            height: 30px;
+        }
     }
 }

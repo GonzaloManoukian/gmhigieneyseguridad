@@ -32,7 +32,7 @@
                     <a href="index.html"><img src="img/nombre.png" alt="Gonzalo Manoukian" class="head_logo animate__animated animate__fadeIn"></a>
                 </div>
 
-                <i class="burger-button">
+                   <i class="burger-button">
                     <img src="icons/burger.png" alt="burger-menu icon" height="20px">
                 </i>
 
@@ -57,7 +57,7 @@
                 </nav>
             </header>
 
-            <div class="banner__background_image animate__animated animate__fadeIn">
+            <div class="banner banner__background_image animate__animated animate__fadeIn">
                 <div class="banner__logo">
                     <img src="img/logo.png" alt="Gonzalo Manoukian" class="banner__logo--img animate__animated animate__fadeIn">
                 </div>
@@ -76,12 +76,12 @@
 
             <!-- SERVICIOS -->
 
-            <section id="servicios" class="container-fluid">
+            <main id="servicios" class="container-fluid">
                 <div class="container-lg row h__titulos">
                     <h2 class="text-center h__titulos--size"> SERVICIOS </h2>
                 </div>
                 <div class="container-lg row servicios__cards_group">
-                    <div class="col-lg-4">
+                    <div class="col-lg">
                         <div class="card servicios__cards servicios__cards--hover">
                             <div class="card-header servicios__cards--h">
                                 <h3 class="text-center">Plan Antisiniestral</h3>
@@ -106,7 +106,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg">
                         <div class="card servicios__cards servicios__cards--hover">
                             <div class="card-header servicios__cards--h">
                                 <h3 class="text-center">Servicio Externo Higiene y Seguridad en el Trabajo</h3>
@@ -130,7 +130,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg">
                         <div class="card servicios__cards servicios__cards--hover">
                             <div class="card-header servicios__cards--h">
                                 <h3 class="text-center">Mediciones Certificadas</h3>
@@ -153,18 +153,18 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </main>
 
             <!-- EDUCATIVOS Y SALUD -->
 
             <section id="educativos_salud" class="salud__background_img container-fluid">
-                <div class=" logo_index">
+                <div class="educativos__width">
                     <h2 class="h__titulos--div">ESTABLECIMIENTOS EDUCATIVOS Y DE SALUD</h2>
-                    <div class="container-lg row h__titulos ">
-                        <h2 class="text-center h__titulos--size"> SERVICIOS </h2>
-                    </div>
-                    <div class="container-lg row servicios__cards_group">
-                        <div class="col-lg-4xs">
+                <div class="container-lg row h__titulos">
+                    <h2 class="text-center h__titulos--size"> SERVICIOS </h2>
+                </div>
+                <div class="container-lg row servicios__cards_group">
+                        <div class="col-lg">
                             <div class="card servicios__cards servicios__cards--hover">
                                 <div class="card-header servicios__cards--h">
                                     <h3 class="text-center">Plan Antisiniestral</h3>
@@ -188,7 +188,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg">
                             <div class="card servicios__cards servicios__cards--hover">
                                 <div class="card-header servicios__cards--h">
                                     <h3 class="text-center">Servicio Externo Higiene y Seguridad en el Trabajo</h3>
@@ -211,7 +211,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg">
                             <div class="card servicios__cards servicios__cards--hover">
                                 <div class="card-header servicios__cards--h">
                                     <h3 class="text-center">Mediciones Certificadas</h3>
@@ -238,6 +238,7 @@
 
             
             <!-- QUOTE -->
+            
             <section id="quote" class="section--text">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Rerum veritatis aperiam possimus ex dolorum consequatur pariatur dicta ipsam, officia molestiae saepe unde accusantium mollitia sint laboriosam in, amet, id. Aperiam animi, saepe sed eaque quos, reiciendis sint natus perferendis distinctio impedit aspernatur sapiente dolore dolorum corporis nemo est eveniet ea repudiandae ipsum praesentium. Recusandae molestias culpa praesentium dignissimos dolorum velit aperiam cupiditate, doloremque! Voluptates eveniet, perspiciatis cupiditate quisquam fugiat minus totam enim quidem doloribus et sapiente repellat magni unde quo repudiandae quis iusto nisi aut officia sed. Corporis eaque ipsum iusto porro, atque consequuntur nihil rerum ad ipsa laudantium nesciunt.</p>
             </section>
@@ -254,7 +255,7 @@
                         <div class="form-group">
                             <div class="form-row">
                                 <div class="col-md-12 mb-4">
-                                    <input type="text" class="form-control form-control-lg bs--font_size" name="nombre" placeholder="Nombre*">
+                                    <input type="text" class="form-control form-control-lg bs--font_size" name="nombre" placeholder="Nombre*" required>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -264,30 +265,31 @@
                             </div>
                             <div class="form-row">
                                 <div class="col-md-12 mb-4">
-                                    <input type="email" class="form-control form-control-lg bs--font_size" name="email" placeholder="Email*">
+                                    <input type="email" class="form-control form-control-lg bs--font_size" name="email" placeholder="Email*" required>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-md-12 mb-4">
-                                    <input type="email" class="form-control form-control-lg bs--font_size" name="telefono" placeholder="Telefono">
+                                    <input type="tel" class="form-control form-control-lg bs--font_size" name="telefono" placeholder="Telefono">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-md-12 mb-4">
-                                    <textarea name="consulta" placeholder="Consulta*" class="form-control form-control-lg bs--font_size"></textarea>
+                                    <textarea name="consulta" placeholder="Consulta*" required class="form-control form-control-lg bs--font_size"></textarea>
                                 </div>
                             </div>
                         </div>
-                        <input type="submit" class="btn btn-primary bs--font_size" value="Enviar Formulario">
+                        <input type="submit" class="btn btn-primary col-md-12 mb-4 bs--font_size" value="Enviar Formulario">
                     </form>
                 </div>
             </section>
         </div>
     </div>
     
+<!--  BOTON WHATSAPP  -->
     <div> 
-        <a href="https://wa.me/5491134079792" class="float" target="_blank">
-            <i class="fa fa-whatsapp my-float">
+        <a href="https://wa.me/5491134079792" class="button__whatsapp" target="_blank">
+            <i class="button__whatsapp--mt">
                 <img src="icons/whatsapp.png" alt="whatsapp icon" height="35px">
             </i>
         </a>
@@ -296,19 +298,17 @@
     <footer class="footer">
        <h4 class="footer--h"> Redes Sociales </h4>
         <div class="footer__social">
-           <i class="footer__social--icon"><img src="icons/email.png" alt="email icon"></i>
-           <i class="footer__social--icon"><img src="icons/facebook.png" alt="facebook icon"></i>
-           <i class="footer__social--icon"><img src="icons/instagram.png" alt="instagram icon"></i>
-           <i class="footer__social--icon"><img src="icons/linkedin.png" alt="linkedin icon"></i>            
+            <a href="mailto: gonzalomanoukian@gmail.com"><i class="footer__social--icon"><img src="icons/email.png" alt="email icon"></i></a>
+            <a href="https://www.facebook.com/Higiene-y-Seguridad-Laboral-Lic-G-Manoukian-105667654474743/" target="_blank"><i class="footer__social--icon"><img src="icons/facebook.png" alt="facebook icon"></i></a>
+            <a href="https://www.instagram.com/gm.higieneyseguridad/" target="_blank"><i class="footer__social--icon"><img src="icons/instagram.png" alt="instagram icon"></i></a>
+            <a href="https://www.linkedin.com/in/gonzalomanoukian/"><i class="footer__social--icon"><img src="icons/linkedin.png" alt="linkedin icon"></i></a>
         </div>
         <div class="footer__copyright">
             <p>© Copyright 2020-2020 Gonzalo Manoukian - Todos los Derechos Reservados</p>
         </div>
     </footer>
 
-    <!-- Script JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js">
-    </script>
+
     <!-- Interaccion Header -->
     <script>
         $(window).scroll(function() {

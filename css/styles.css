@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
         list-style-type: none;
         display: inline-block;
         word-spacing: normal;
+        line-height: 2.1rem;
         position: relative;
         text-align: center;
         flex-grow: 1;
@@ -69,49 +70,31 @@ h1, h2, h3, h4, h5, h6 {
           text-transform: uppercase;
           transition: all 0.5s;
           text-align: center;
-          background-image: linear-gradient(#69767b, #69767b), linear-gradient(transparent, transparent);
+          background-image: linear-gradient(#0B2027, #0B2027), linear-gradient(transparent, transparent);
           background-size: 0 2px, auto;
           background-repeat: no-repeat;
           background-position: center bottom;
           transition: all .2s ease-out; }
-
-.header a:hover {
-  color: #69767b;
-  background-size: 100% 2px, auto; }
+          .header nav ul li a:hover {
+            opacity: .6;
+            background-size: 100% 2px, auto; }
 
 .header--scroll {
   background-color: #D8E5F5; }
-
-header nav #header__submenu--hover {
-  background-color: #D8E5F5;
-  font-size: 1.6rem; }
 
 .head_logo {
   width: 180px;
   margin-left: 30px;
   --animate-duration: 3s; }
 
-.burger-button {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(22, 65, 80, 0.8);
-  display: none;
-  line-height: 35px;
-  text-align: center;
-  position: fixed;
-  z-index: 999;
-  right: 10px;
-  top: 10px;
-  box-shadow: 1px 1px 2px #999; }
-
 .banner__background_image {
   position: relative;
   left: 0;
   background-image: url(../img/index.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
+  background-position: center center;
   flex-basis: 100%;
   --animate-duration: 2s;
   display: flex;
@@ -149,7 +132,7 @@ header nav #header__submenu--hover {
   position: relative;
   justify-content: center;
   padding-top: 150px;
-  padding-bottom: 50px; }
+  padding-bottom: 150px; }
 
 .h__titulos {
   display: flex;
@@ -200,14 +183,14 @@ header nav #header__submenu--hover {
 #educativos_salud {
   position: relative;
   padding-top: 100px;
-  padding-bottom: 50px; }
+  padding-bottom: 130px; }
 
 .salud__background_img {
   position: initial;
   left: 0;
   background-image: url(../img/salud.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   flex-basis: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -229,7 +212,7 @@ header nav #header__submenu--hover {
 /* CONTACTO */
 #contacto {
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 120px; }
 
 .contacto__background_img {
   position: initial;
@@ -239,7 +222,7 @@ header nav #header__submenu--hover {
   background-image: url(../img/contacto1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100%;
+  background-size: cover;
   flex-basis: 100%; }
 
 .contacto--p {
@@ -285,6 +268,20 @@ header nav #header__submenu--hover {
     padding: 10px;
     margin: 0; }
 
+.burger-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(22, 65, 80, 0.8);
+  display: none;
+  line-height: 35px;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  right: 10px;
+  top: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
+
 .banner__scroll_button {
   flex-basis: 100%;
   display: flex;
@@ -324,7 +321,7 @@ header nav #header__submenu--hover {
 .banner__scroll_button a:hover {
   opacity: .3; }
 
-.float {
+.button__whatsapp {
   position: fixed;
   width: 60px;
   height: 60px;
@@ -334,25 +331,21 @@ header nav #header__submenu--hover {
   color: #FFF;
   border-radius: 50px;
   text-align: center;
-  box-shadow: 2px 2px 3px #999;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
   z-index: 100;
   line-height: 55px; }
 
-.float:hover {
+.button__whatsapp:hover {
   background-color: #20be6d; }
 
-.my-float {
+.button__whatsapp--mt {
   margin-top: 16px; }
 
 @media screen and (max-width: 1279px) {
   .banner__background_image {
-    background-size: auto 100vh;
-    background-position: center center;
     top: 0px; }
   .banner__logo--img {
-    width: 300px; } }
-
-@media screen and (max-width: 999px) {
+    width: 300px; }
   .burger-button {
     display: block; }
   .header {
@@ -366,7 +359,13 @@ header nav #header__submenu--hover {
         margin-right: 20px; }
         .header nav ul li {
           display: list-item;
-          flex: 0; }
+          flex: 0;
+          border-bottom: 1px solid #444e51;
+          width: 200px;
+          text-align: end;
+          color: #444e51;
+          border-radius: 0;
+          font-weight: 400; }
   .header--scroll {
     background-color: transparent; }
   .head_logo {
@@ -374,6 +373,7 @@ header nav #header__submenu--hover {
   .menu {
     position: fixed;
     background: rgba(151, 185, 210, 0.9);
+    background-image: linear-gradient(to right, rgba(151, 185, 210, 0.8), rgba(123, 159, 186, 0.8));
     z-index: 998;
     top: 0;
     right: -100vw;
@@ -385,3 +385,60 @@ header nav #header__submenu--hover {
     transition: .3s; }
   .menu.is-active {
     right: 0; } }
+
+@media (max-width: 1023px) {
+  #servicios {
+    max-width: 650px; }
+  .servicios__cards_group {
+    margin: 0; }
+  .servicios__cards {
+    margin-bottom: 50px; }
+  .servicios__cards--h {
+    height: auto; }
+    .servicios__cards--h h3 {
+      margin-top: 5px;
+      margin-bottom: 5px; }
+  .servicios__cards--p {
+    height: auto;
+    padding: 20px 50px; }
+  .educativos__width {
+    max-width: 620px;
+    margin: 0; }
+  .h__titulos {
+    margin-left: 0;
+    margin-right: 0; } }
+
+@media (max-width: 767px) {
+  html {
+    font-size: 55%; }
+  #quienes_somos {
+    padding-top: 50px; }
+  #servicios {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .servicios__cards {
+    margin-bottom: 30px; }
+  .servicios__cards--p {
+    padding: 15px 20px; }
+  #educativos_salud {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .h__titulos--div {
+    font-size: 2.8rem; }
+  #quote {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  #contacto {
+    padding-top: 30px;
+    padding-bottom: 50px; }
+  .footer__social {
+    width: auto; }
+  .button__whatsapp {
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    left: 10px;
+    right: 0;
+    line-height: 47px; }
+    .button__whatsapp img {
+      height: 30px; } }

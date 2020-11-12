@@ -21,7 +21,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-
 #body__bs--correcciones {
 
     padding-left: 0px;
@@ -34,7 +33,6 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     padding: 0px;
 }
-
 
 // HEADER
 
@@ -69,6 +67,7 @@ h1, h2, h3, h4, h5, h6 {
                 list-style-type: none;
                 display: inline-block;
                 word-spacing: normal;
+                line-height: 2.1rem;
                 position: relative;
                 text-align: center;
                 flex-grow: 1;
@@ -85,36 +84,27 @@ h1, h2, h3, h4, h5, h6 {
                     text-transform: uppercase;
                     transition: all 0.5s;
                     text-align: center;
-                    background-image: linear-gradient(#69767b, #69767b), linear-gradient(transparent, transparent);
+                    background-image: linear-gradient($negro, $negro), linear-gradient(transparent, transparent);
                     background-size: 0 2px, auto;
                     background-repeat: no-repeat;
                     background-position: center bottom;
                     transition: all .2s ease-out;
+
+                    &:hover {
+                        //    background-color: #97B9D2;
+                        opacity: .6;
+                        background-size: 100% 2px, auto;
+                    }
+
                 }
             }
         }
     }
 }
 
-.header a:hover {
-//    background-color: #97B9D2;
-    color: #69767b;
-    background-size: 100% 2px, auto;
-}
+
 .header--scroll {
     background-color: $celeste_principal;
-}
-
-
-header {
-
-    nav {
-
-        #header__submenu--hover {
-            background-color: #D8E5F5;
-            font-size: 1.6rem;
-        }
-    }
 }
 
 
@@ -124,22 +114,6 @@ header {
     --animate-duration: 3s;
 }
 
-.burger-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(22, 65, 80, .8);
-    display: none;
-    line-height: 35px;
-    text-align: center;
-    position: fixed;
-    z-index: 999;
-    right: 10px;
-    top: 10px;
-    box-shadow: 1px 1px 2px #999;
-}
-
-
 
 // BANNER
 
@@ -148,8 +122,9 @@ header {
     left: 0;
     background-image: url(../img/index.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
     flex-basis: 100%;
     --animate-duration: 2s;
     display: flex;
@@ -183,9 +158,9 @@ header {
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
-    
+
     h1 {
-        
+
         padding-bottom: 50px;
     }
 }
@@ -207,7 +182,7 @@ header {
     position: relative;
     justify-content: center;
     padding-top: 150px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 
 }
 
@@ -277,7 +252,7 @@ header {
 
     position: relative;
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 130px;
 
 }
 
@@ -287,7 +262,7 @@ header {
     background-image: url(../img/salud.jpg);
     background-repeat: no-repeat;
     // background-position: center center;
-    background-size: 100%;
+    background-size: cover;
     flex-basis: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -321,7 +296,7 @@ header {
 #contacto {
     
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
 }
 
 .contacto__background_img {
@@ -332,7 +307,7 @@ header {
     background-image: url(../img/contacto1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: cover;
     flex-basis: 100%;
 }
 
