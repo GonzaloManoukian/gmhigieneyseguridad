@@ -205,9 +205,20 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3.5rem;
   margin-bottom: 3rem; }
 
+.educativos__section--text {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 50px; }
+
 #quote {
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 200px;
+  padding-bottom: 200px; }
+
+.quote__text {
+  font-size: 2.3rem;
+  font-style: italic;
+  margin: 0 30px; }
 
 /* CONTACTO */
 #contacto {
@@ -345,7 +356,21 @@ h1, h2, h3, h4, h5, h6 {
   .banner__background_image {
     top: 0px; }
   .banner__logo--img {
-    width: 300px; }
+    width: 300px; } }
+
+@media (max-width: 1199px) {
+  .header nav {
+    width: 70%; }
+  .servicios__cards--p {
+    height: 50rem; }
+  .quote__text {
+    font-size: 2rem; } }
+
+@media (max-width: 1023px) {
+  .banner__background_image {
+    background-image: url(../img/index1024.jpg); } }
+
+@media (max-width: 1023px) {
   .burger-button {
     display: block; }
   .header {
@@ -384,9 +409,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     transition: .3s; }
   .menu.is-active {
-    right: 0; } }
-
-@media (max-width: 1023px) {
+    right: 0; }
   #servicios {
     max-width: 650px; }
   .servicios__cards_group {
@@ -406,11 +429,19 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0; }
   .h__titulos {
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .educativos__section--text {
+    margin-left: 0;
+    margin-right: 0; }
+  .quote__text {
+    text-align: center;
+    margin: 0 40px; } }
 
 @media (max-width: 767px) {
   html {
     font-size: 55%; }
+  .banner__logo--img {
+    width: 250px; }
   #quienes_somos {
     padding-top: 50px; }
   #servicios {
@@ -426,11 +457,15 @@ h1, h2, h3, h4, h5, h6 {
   .h__titulos--div {
     font-size: 2.8rem; }
   #quote {
-    padding-top: 50px;
-    padding-bottom: 50px; }
+    padding-top: 100px;
+    padding-bottom: 100px; }
+  .quote__text {
+    text-align: center;
+    margin: 0 50px; }
   #contacto {
     padding-top: 30px;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    height: 100vh; }
   .footer__social {
     width: auto; }
   .button__whatsapp {

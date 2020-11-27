@@ -8,6 +8,39 @@
         width: 300px;
     }
 
+}
+
+@media (max-width: 1199px) {
+
+    .header {
+
+        nav {
+            width: 70%;
+        }
+    }
+    
+    .servicios__cards--p {
+        height: 50rem;
+
+    }
+
+    .quote__text {
+
+        font-size: 2rem;
+
+    }
+
+}
+
+@media (max-width: 1023px) {
+
+    .banner__background_image {
+        background-image: url(../img/index1024.jpg);
+    }
+}
+
+@media (max-width: 1023px) {
+
     .burger-button {
         display: block;
     }
@@ -67,12 +100,6 @@
     .menu.is-active {
         right: 0;
     }
-}
-
-
-
-@media (max-width: 1023px) {
-
 
     //    SERVICIOS
 
@@ -114,8 +141,18 @@
         margin-left: 0;
         margin-right: 0;
     }
-}
 
+    .educativos__section--text {
+        margin-left: 0;
+        margin-right: 0;
+    
+    }
+
+    .quote__text {
+        text-align: center;
+        margin: 0 40px;
+    }
+}
 
 
 @media (max-width: 767px) {
@@ -124,7 +161,11 @@
 
         font-size: 55%;
     }
-    
+
+    .banner__logo--img {
+        width: 250px;
+    }
+
     #quienes_somos {
 
         padding-top: 50px;
@@ -157,14 +198,20 @@
 
     #quote {
 
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .quote__text {
+        text-align: center;
+        margin: 0 50px;
     }
 
     #contacto {
 
         padding-top: 30px;
         padding-bottom: 50px;
+        height: 100vh;
     }
 
     .footer__social {
