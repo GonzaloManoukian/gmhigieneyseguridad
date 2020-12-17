@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center; }
 
 .banner__logo--img {
-  width: 25%;
+  width: 20%;
   --animate-duration: 3s; }
 
 #quienes_somos {
@@ -368,7 +368,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1023px) {
   .banner__background_image {
-    background-image: url(../img/index1024.jpg); } }
+    background-image: url(../img/index1024.jpg);
+    background-attachment: initial; } }
 
 @media (max-width: 1023px) {
   .burger-button {
@@ -441,7 +442,7 @@ h1, h2, h3, h4, h5, h6 {
   html {
     font-size: 55%; }
   .banner__logo--img {
-    width: 250px; }
+    width: 200px; }
   #quienes_somos {
     padding-top: 50px; }
   #servicios {

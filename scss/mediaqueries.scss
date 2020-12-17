@@ -36,6 +36,7 @@
 
     .banner__background_image {
         background-image: url(../img/index1024.jpg);
+        background-attachment: initial;
     }
 }
 
@@ -163,7 +164,7 @@
     }
 
     .banner__logo--img {
-        width: 250px;
+        width: 200px;
     }
 
     #quienes_somos {
